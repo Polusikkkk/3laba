@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Polusiksss's Card</title>
+    <style>
+        body {
+            font-family: Georgia, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FF69B4;
+        }
+
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            position: relative;
+            left: 40px;
+        }
+
+        .header {
+            background-color: #FFCCCC;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .header-title {
+            margin: 0;
+            padding: 0 0 0 20px;
+            position: relative;
+            left: 180px;
+        }
+
+        .main {
+            padding: 20px 0;
+        }
+
+        .footer {
+            background-color: #FFCCCC;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .avatar {
+            width: 400px;
+            height: 400px;
+            display: block;
+            position: relative;
+            left: 110px;
+            border-radius: 50%;
+        }
+
+        .portfolio-menu {
+            display: none;
+            background-color: #FF1493;
+            padding: 10px;
+            margin-top: 10px;
+            position: relative;
+            left: 17px;
+        }
+
+        .toggle-button {
+            background-color: #DB7093;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+            position: relative;
+            left: 250px;
+        }
+
+        .text{
+            position: relative;
+            left: 160px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header-title">Polina's Card</h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <img src="C:\Users\Polina\Desktop\1\thephoto_avatar.jpg" alt="Polusik's Avatar" class="avatar">
+            <img scr="C:\Users\Polina\Desktop\1\thephoto_avatar.jpg" style="position: relative; right: 100px;" />
+            <h2 class="text"> Welcome to my website!</h2>
+            <p>Hi, I'm Polina. I'm a first-year student of the IT faculty. Welcome to my personal website.</p>
+            
+            <button class="toggle-button" onclick="togglePortfolio()">Portfolio</button>
+            <div class="portfolio-menu" id="portfolioMenu">
+                <p>Check out my work:</p>
+                <ul>
+                    <li><a href="https://github.com/Polusikkkk" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2023 Polina. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function togglePortfolio() {
+            var portfolioMenu = document.getElementById("portfolioMenu");
+            if (portfolioMenu.style.display === "none") {
+                portfolioMenu.style.display = "block";
+            } else {
+                portfolioMenu.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+
